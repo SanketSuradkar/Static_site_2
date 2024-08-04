@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanket.SS</title>
+    <link rel="stylesheet" href="my-site2.css">
+</head>
+
+<body>
+    <header>
+        <div class="mian">
+            <div class="logo">
+                <img src="Logo2.png">
+            </div>
+            <ul class="items">
+                <li><a href="index.html">Home</a>
+                </li>
+                <li class="active"><a href="my-site2gal.html">Games</a>
+                    <ul class="submenu">
+                        <li><a id="dd" href="my-site2game.html">8 Ball Pool</a></li>
+                        <li><a id="dd" href="rummy.html">Rummy</a></li>
+                    </ul>
+                </li>
+                <li><a href="my-site2ser.html">Services</a>
+                </li>
+                <li><a href="my-site2abo.html">About</a>
+                </li>
+                <li><a href="my-site2con.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <!-- <div class="alert">
+            <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+            <strong>Alert!</strong> If you are using smart phone please turn onn desktop mode to get better view.
+          </div> -->
+        <div class="title">
+
+            <h1><iframe id="myvideo" allowfullscreen frameborder="0" height="520" name="cloudgames-com" scrolling="no"
+                    src="https://wanted5games.com/games/html5/pool-8-mania-new-en-s-iga-cloud/index.html?pub=10"
+                    width="750"></iframe></h1>
+        </div>
+        <div class="buttons">
+            <button onclick="openFullscreen();">Click here to fullscreen</button>
+            <!-- <a href="https://www.youtube.com/watch?v=WO2O75fy94g" class="btn">Watch Video</a>
+            <a href="https://sanketss2003.blogspot.com/2020/06/blog-post.html" class="btn">Learn More</a> -->
+        </div>
+    </header>
+</body>
+<style>
+    /* Alert box section======================================== */
+    /* .alert {
+  padding: 20px;
+  background-color: #f44336;
+  color: white;
+  margin-top: 35%;
+  overflow: hidden;
+  text-align: center;
+}
+
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+  
+}
+
+.closebtn:hover {
+  color: black;
+} */
+</style>
+<!-- this code is for detection of android device if it get detect it will show an alert message showing open on pc -->
+<script language="Javascript">
+    window.onload = function () {
+        var mobile = (/iphone|ipad|ipod|android|blackberry|mini|windows\sce|palm/i.test(navigator.userAgent.toLowerCase()));
+        if (mobile) {
+            alert("Visit this on a Computer for Better View, OR open in desktop mode");
+        } else {
+
+        }
+    }
+</script>
+<style>
+    .title {
+        /* background-color: aqua; */
+        margin-top: 60px;
+
+    }
+
+    .title h1 {
+        font-size: 50px;
+        color: white;
+        position: relative;
+        overflow: hidden;
+        margin-top: 15px;
+
+
+    }
+
+    .buttons {
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+    }
+
+    .buttons button {
+        color: whitesmoke;
+        background-color: black;
+        padding: 13px;
+        font-size: 17px;
+        text-align: center;
+    }
+
+    .buttons button:hover {
+        color: red;
+    }
+
+    .btn {
+        border: 1px solid white;
+        padding: 10px 30px;
+        color: white;
+        text-decoration: none;
+        transition: 0.6s ease;
+
+    }
+
+    .btn:hover {
+        background-color: white;
+        color: black;
+    }
+
+    /* ====================== */
+    .submenu {
+        position: absolute;
+        width: 140px;
+        left: 0;
+        margin: 9px -1px;
+        visibility: hidden;
+        /* background-color: blue; */
+
+
+    }
+
+    #dd {
+        color: white;
+        background-color: transparent;
+        text-align: center;
+        padding: 4px 3px;
+        float: right;
+        width: 88px;
+        justify-content: center;
+
+    }
+
+    .submenu li {
+        display: inline-block;
+        background-color: transparent;
+        padding: 2px;
+        margin: 1px 3.2px;
+        width: 90px;
+        padding-right: 0px;
+        /* background-color: brown; */
+    }
+</style>
+<script>
+    var elem = document.getElementById("myvideo");
+    function openFullscreen() {
+        if (elem.requestFullscreen) {
+            elem.requestFullscreen();
+        } else if (elem.mozRequestFullScreen) { /* Firefox */
+            elem.mozRequestFullScreen();
+        } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari & Opera */
+            elem.webkitRequestFullscreen();
+        } else if (elem.msRequestFullscreen) { /* IE/Edge */
+            elem.msRequestFullscreen();
+        }
+    }
+</script>
+
+</html>

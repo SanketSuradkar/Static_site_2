@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanket.SS</title>
+    <link rel="stylesheet" href="my-site2.css">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="mian">
+            <div class="logo">
+                <img src="Logo2.png">
+            </div>
+            <ul class="items">
+                <li><a href="index.html">Home</a>
+                </li>
+                <li><a href="my-site2gal.html">Games</a>
+                    <ul class="submenu">
+                        <li><a id="dd" href="my-site2game.html">8 Ball Pool</a></li>
+                        <li><a id="dd" href="rummy.html">Rummy</a></li>
+                    </ul>
+                </li>
+                <li><a href="my-site2ser.html">Services</a>
+                </li>
+                <li><a href="my-site2abo.html">About</a>
+                </li>
+                <li><a href="my-site2con.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <!-- <div class="alert">
+            <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+            <strong>Alert!</strong> If you are using smart phone please turn onn desktop mode to get better view.
+          </div> -->
+        <section class="text-white body-font">
+            <div class="container px-5 py-24 mx-auto flex flex-wrap items-center">
+                <div class="lg:w-3/5 md:w-1/2 md:pr-16 lg:pr-0 pr-0">
+                    <h1 class="title-font font-medium text-3xl text-white">Welcome to this site please sign up below..
+                    </h1>
+                    <p class="leading-relaxed mt-4">just sign up to this site there is no risk to loose your data or
+                        something this
+                        site is safe and secure to use because this site do not submit your imformation to any other
+                        server or computer
+                        so be free to use this site, and if get bored surfing this site just <a
+                            style="text-decoration: underline;" href="my-site2game.html">click here</a>
+                        to play 8 ball pool game or <a style="text-decoration: underline;" href="rummy.html">click here
+                        </a>to play Rummy game
+                        so dont waste your time reading this actually it's nonsense just play games that i have mention
+                        earlier
+                        or just sign in and do your other work and dont talk to me about this site,this site is under
+                        construction ok.. :| </p>
+                </div>
+                <p id="demo"></p>
+                <div class="lg:w-2/6 md:w-1/2 bg-gray-200 rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0">
+                    <h2 class="text-gray-900 text-lg font-medium title-font mb-5">Sign Up</h2>
+                    <input style="color: black;"
+                        class="bg-white rounded border border-gray-400 focus:outline-none focus:border-indigo-500 text-base px-4 py-2 mb-4"
+                        placeholder="Full Name" type="text" id="al">
+                    <input style="color: black;"
+                        class="bg-white rounded border border-gray-400 focus:outline-none focus:border-indigo-500 text-base px-4 py-2 mb-4"
+                        placeholder="Email" type="email" id="ale">
+                    <input style="color: black;"
+                        class="bg-white rounded border border-gray-400 focus:outline-none focus:border-indigo-500 text-base px-4 py-2 mb-4"
+                        placeholder="Password" type="password" id="aler">
+                    <button onclick="sign()"
+                        class="text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Sign
+                        Up</button>
+                    <p class="text-xs text-gray-500 mt-3">just sign in dont ask any questions, this is safe site believe
+                        me .</p>
+                </div>
+            </div>
+        </section>
+
+
+        </div>
+
+    </header>
+    
+</body>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: century Gothic;
+        
+
+    }
+
+
+
+    header {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.623), rgba(0, 0, 0, 0.623)), url("https://source.unsplash.com/1600x900/?chill,coding");
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+        overflow: scroll;
+        background-repeat: no-repeat;
+        
+
+    }
+  
+
+
+
+    /* ==================================animation========================= */
+    @keyframes slideup {
+
+        0% {
+            opacity: 0;
+            transform: translateY(18px);
+        }
+
+        100% {
+            opacity: 1;
+            transform: none;
+        }
+    }
+</style>
+
+<!-- this code is for detection of android device if it get detect it will show an alert message showing open on pc -->
+<script language="Javascript">
+    window.onload = function () {
+        var mobile = (/iphone|ipad|ipod|android|blackberry|mini|windows\sce|palm/i.test(navigator.userAgent.toLowerCase()));
+        if (mobile) {
+            alert("Visit this on a Computer for Better View, OR open in desktop mode");
+        } else {
+
+        }
+    }
+
+    function sign() {
+        var a = document.getElementById("al").value;
+        var b = document.getElementById("ale").value;
+        var c = document.getElementById("aler").value;
+        var d= a+" "+b+" "+c+" ";
+        // document.getElementById("demo").innerHTML = a;
+        // document.getElementById("demo").innerHTML = b;
+        // document.getElementById("demo").innerText =d;
+        if (a == "") {
+            alert("please fill-up Name before sign up")
+         return false
+        }
+        if (b == "") {
+            alert("please fill-up Email sign up")
+            return false
+        }
+        if (c == "") {
+            alert("please fill-up Password before sign up")
+            return false
+        }
+        else {
+            alert("ok do not get afraid, your email and password is safe i will not do anything with it ")
+            return 
+            // document.getElementById("demo").innerText =d;
+           
+        }
+    }
+
+</script>
+
+</html>

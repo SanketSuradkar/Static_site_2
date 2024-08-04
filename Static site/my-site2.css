@@ -1,0 +1,200 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: century Gothic;
+    
+}
+body{ background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5) ), url("pic1.jpg");
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    background-repeat: no-repeat;
+
+}
+/* header{
+   
+
+} */
+.items{
+    position: relative;
+    float: right;
+    list-style: none;
+    margin-top: 25px;
+    
+}
+.items li{
+    display: inline;
+    position: relative;
+
+}
+.items li.active a{
+    background-color: white;
+    color: black;
+}
+
+.items li a{
+    transition: 0.6s ease;
+    text-decoration: none;
+    color: white;
+    padding: 5px 20px;
+    outline: 1px solid transparent;
+    
+}
+.items li a:hover{
+    background-color: white;
+    color: black;
+    
+}
+.logo img{
+    float: left;
+    width: 280px;
+    height: auto;
+    padding-top: 0px;
+    margin-top: -40px;
+}
+.mian{ 
+    max-width: 1200px;
+    margin: auto;
+}
+.title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.title h1{
+    font-size:100px ;
+    color: white;
+    text-align: center;
+
+}
+.buttons{
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+}
+.apps{
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+    
+}
+.btnn{
+    border: 1px solid white;
+    padding: 10px 29px ;
+    color: white;
+    text-decoration: none;
+    
+    overflow: hidden;
+}
+.btnn:hover{
+    background-color: rgba(250, 250, 250, 0.376);
+    color: white;
+    transition: 0.6s ease;
+    
+}
+.btn{
+    border: 1px solid white;
+    padding: 10px 30px ;
+    color: white;
+    text-decoration: none;
+    transition: 0.6s ease;
+    overflow: hidden;
+}
+.btn:hover{
+    background-color: white;
+    color: black;
+    
+    
+}
+/* ------------------------------------------------------------ */
+.submenu {
+    position: absolute;
+    width: 140px;
+    left: 0;
+    margin: 9px -1px ;
+    visibility: hidden;
+    /* background-color: blue; */
+    
+
+}
+#dd {
+    color: white;
+    background-color: transparent;
+    text-align: center;
+    padding: 5px 3px;
+    float: right;
+    width: 88px;
+    justify-content: center;
+    /* margin-top: 5px; */
+   
+}
+
+.submenu li {
+   display: inline-block;
+    background-color: transparent;
+    padding: 3px;
+    margin: 2px 3.2px; 
+    width: 90px;  
+    padding-right: 0px;
+    /* background-color: brown; */
+}
+
+.items li:hover>.submenu {
+    visibility: visible;
+    transition: 0.6s ease;
+    animation: slideup .3s ease;
+}
+
+.submenu li:hover {
+
+    color: black;
+    transition: 0.6s ease;
+}
+
+
+#dd:hover {
+    color: black;
+    background-color: white;
+    
+    
+}
+/* ==================================animation========================= */
+@keyframes slideup {
+
+    0%{
+          opacity: 0;
+          transform: translateY(18px);
+      }
+     100%{
+          opacity: 1;
+          transform: none;
+      }
+  }
+  @media only screen and (max-width: 375px){
+      .title h1{
+          font-size: 50px;
+      }
+      .buttons a{
+        display: inline-block;
+       margin-left: 10px;
+    
+        }
+
+      #sara{
+          margin-bottom: 50px;
+          padding-left: 44px;
+      }
+      .items li a {
+          margin: 20px auto 20px ;
+      }
+  }
